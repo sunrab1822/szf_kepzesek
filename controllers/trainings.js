@@ -1,3 +1,6 @@
+const Training = require("../models/Training");
+
+
 // @desc   Get all trainings
 // @route  GET /api/trainings
 // @access Public
@@ -14,6 +17,7 @@ exports.getTraining = (req, res, next) => {
 // @route  POST /api/trainings
 // @access Private
 exports.createTraining = (req, res, next) => {
+    
     res.status(200).json({ success: true, msg: "Create new training" });
 };
 // @desc   Update training
